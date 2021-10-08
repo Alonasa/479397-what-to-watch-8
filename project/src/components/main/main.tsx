@@ -1,6 +1,14 @@
 import FilmCard from '../film-card/film-card';
 
-function Main(): JSX.Element {
+export type FilmType = {
+  name: string
+  genre: string
+  release: number
+  posterImage: string
+  backgroundImage: string
+}
+
+function Main(props: FilmType): JSX.Element {
   return (
     <div className="page-content">
       <section className="catalog">
@@ -40,7 +48,7 @@ function Main(): JSX.Element {
         </ul>
 
         <div className="catalog__films-list">
-          <FilmCard/>
+          <FilmCard name={props.name} genre={props.genre} release={props.release} posterImage={props.posterImage} backgroundImage={props.backgroundImage}/>
         </div>
 
         <div className="catalog__more">
