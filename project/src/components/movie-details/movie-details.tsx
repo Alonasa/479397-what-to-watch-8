@@ -36,7 +36,7 @@ function MovieDetails(): JSX.Element {
                     Adrien Brody, <br/>
                     Ralph Fiennes, <br/>
                     Jeff Goldblum
-                  </span>
+            </span>
           </p>
         </div>
 
