@@ -1,7 +1,7 @@
 function AddReview(): JSX.Element {
   return (
     <div className="add-review">
-      <form action="#" className="add-review__form">
+      <form action="#" method="post" className="add-review__form">
         <div className="rating">
           <div className="rating__stars">
             <input className="rating__input" id="star-10" type="radio" name="rating" value="10"/>
