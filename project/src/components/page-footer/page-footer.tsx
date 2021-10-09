@@ -8,7 +8,6 @@ function PageFooter(): JSX.Element {
           <span className="logo__letter logo__letter--3">W</span>
         </a>
       </div>
-
       <div className="copyright">
         <p>© 2019 What to watch Ltd.</p>
       </div>

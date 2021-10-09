@@ -6,9 +6,7 @@ function FilmCard(props: FilmType): JSX.Element {
       <div className="film-card__bg">
         <img src={props.backgroundImage} alt={props.name}/>
       </div>
-
       <h1 className="visually-hidden">WTW</h1>
-
       <header className="page-header film-card__head">
         <div className="logo">
           <a className="logo__link">
@@ -17,7 +15,6 @@ function FilmCard(props: FilmType): JSX.Element {
             <span className="logo__letter logo__letter--3">W</span>
           </a>
         </div>
-
         <ul className="user-block">
           <li className="user-block__item">
             <div className="user-block__avatar">
@@ -29,7 +26,6 @@ function FilmCard(props: FilmType): JSX.Element {
           </li>
         </ul>
       </header>
-
       <div className="film-card__wrap">
         <div className="film-card__info">
           <div className="film-card__poster">
@@ -42,7 +38,6 @@ function FilmCard(props: FilmType): JSX.Element {
               <span className="film-card__genre">{props.genre}</span>
               <span className="film-card__year">{props.release}</span>
             </p>
-
             <div className="film-card__buttons">
               <button className="btn btn--play film-card__button" type="button">
                 <svg viewBox="0 0 19 19" width="19" height="19">

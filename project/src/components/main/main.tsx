@@ -51,13 +51,11 @@ function Main(props: FilmType): JSX.Element {
         <div className="catalog__films-list">
           <FilmCard name={props.name} genre={props.genre} release={props.release} posterImage={props.posterImage} backgroundImage={props.backgroundImage}/>
         </div>
-
         <div className="catalog__more">
           <button className="catalog__button" type="button">Show more</button>
         </div>
       </section>
-
-    <PageFooter/>
+      <PageFooter/>
     </div>
   );
 }

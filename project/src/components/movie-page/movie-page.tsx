@@ -37,7 +37,6 @@ function MoviePage(): JSX.Element {
           other</strong></p>
       </div>
     </div>
-
   );
 }
 
