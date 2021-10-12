@@ -9,7 +9,7 @@ import AddReview from '../add-review/add-review';
 import MyList from '../my-list/my-list';
 import PrivateRoute from '../private-route/private-route';
 
-const isAuthenticated = true;
+const isAuthenticated = false;
 
 const FILM_INFO = {
   name: 'The Grand Budapest Hotel',
