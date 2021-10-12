@@ -3,13 +3,13 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Main from '../main/main';
 import SignIn from '../sign-in/sign-in';
 import Error from '../error-404/error';
-import Player from '../player/player';
+import MyList from '../my-list/my-list';
 import FilmCard from '../film-card/film-card';
 import AddReview from '../add-review/add-review';
-import MyList from '../my-list/my-list';
+import Player from '../player/player';
 import PrivateRoute from '../private-route/private-route';
 
-const isAuthenticated = false;
+const isAuthenticated = true;
 
 const FILM_INFO = {
   name: 'The Grand Budapest Hotel',
@@ -45,7 +45,8 @@ function App(): JSX.Element {
           <Error/>
         </Route>
       </Switch>
-    </BrowserRouter>  );
+    </BrowserRouter>
+  );
 }
 
 export default App;
