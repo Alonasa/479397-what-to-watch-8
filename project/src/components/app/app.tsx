@@ -3,6 +3,10 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Main from '../main/main';
 import SignIn from '../sign-in/sign-in';
 import Error from '../error-404/error';
+import Player from '../player/player';
+import FilmCard from '../film-card/film-card';
+import AddReview from '../add-review/add-review';
+import MyList from '../my-list/my-list';
 
 const FILM_INFO = {
   name: 'The Grand Budapest Hotel',
@@ -21,6 +25,18 @@ function App(): JSX.Element {
         </Route>
         <Route path="/login">
           <SignIn/>
+        </Route>
+        <Route path="/mylist">
+          <MyList/>
+        </Route>
+        <Route path="/films/:id">
+          <FilmCard name={FILM_INFO.name} genre={FILM_INFO.genre} release={FILM_INFO.release} posterImage={FILM_INFO.posterImage} backgroundImage={FILM_INFO.backgroundImage}/>
+        </Route>
+        <Route path="/films/:id/review">
+          <AddReview/>
+        </Route>
+        <Route path="/player/:id">
+          <Player/>
         </Route>
         <Route>
           <Error/>
