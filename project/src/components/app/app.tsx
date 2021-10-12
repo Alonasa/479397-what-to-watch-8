@@ -7,6 +7,9 @@ import MyList from '../my-list/my-list';
 import FilmCard from '../film-card/film-card';
 import AddReview from '../add-review/add-review';
 import Player from '../player/player';
+import PrivateRoute from '../private-route/private-route';
+
+const isAuthenticated = true;
 
 const FILM_INFO = {
   name: 'The Grand Budapest Hotel',
@@ -26,9 +29,10 @@ function App(): JSX.Element {
         <Route path="/login">
           <SignIn/>
         </Route>
-        <Route path="/mylist">
+
+        <PrivateRoute isAuthenticated={isAuthenticated} authenticationPath={'/login'}>
           <MyList/>
-        </Route>
+        </PrivateRoute>
         <Route path="/films/:id">
           <FilmCard name={FILM_INFO.name} genre={FILM_INFO.genre} release={FILM_INFO.release} posterImage={FILM_INFO.posterImage} backgroundImage={FILM_INFO.backgroundImage}/>
         </Route>
