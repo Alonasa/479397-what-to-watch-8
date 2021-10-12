@@ -1,6 +1,12 @@
+import React, {Fragment} from 'react';
+import {Link} from 'react-router-dom';
+
 function Error(): JSX.Element {
   return (
-    <h3 className="error">404 Not Found</h3>
+    <Fragment>
+      <h3 className="error">404 Not Found</h3>
+      <Link to="/">Go to main page</Link>
+    </Fragment>
   );
 }
 
