@@ -29,10 +29,10 @@ function App(): JSX.Element {
         <Route path="/login">
           <SignIn/>
         </Route>
-        <PrivateRoute isAuthenticated={isAuthenticated} authenticationPath={'/login'}>
+        <PrivateRoute isAuthenticated={isAuthenticated} authenticationPath={'/login'} path="/list" exact>
           <MyList/>
         </PrivateRoute>
-        <Route path="/films/:id">
+        <Route path="/films/:id" exact>
           <FilmCard name={FILM_INFO.name} genre={FILM_INFO.genre} release={FILM_INFO.release} posterImage={FILM_INFO.posterImage} backgroundImage={FILM_INFO.backgroundImage}/>
         </Route>
         <Route path="/films/:id/review">
